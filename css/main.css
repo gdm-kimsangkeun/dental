@@ -332,9 +332,11 @@ body{
 }
 .mb img{
     width: 100%;
+    font-size: 0;
 }
 .w108{
-    width: 108%;;
+    width: 108%;
+    overflow-x: hidden;
 }
 .flex_box{
     padding: 0 15px;
