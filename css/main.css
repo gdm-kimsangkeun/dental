@@ -334,9 +334,10 @@ body{
     width: 100%;
     font-size: 0;
 }
-.w108{
-    width: 108%;
-    overflow-x: hidden;
+.bg_pl{
+    box-sizing: border-box;
+    padding-right: 15px;
+    background: #5e7795;
 }
 .flex_box{
     padding: 0 15px;
