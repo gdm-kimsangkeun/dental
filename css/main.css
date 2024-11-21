@@ -41,6 +41,15 @@ section{
 .pc img{
     width: 100%;
 }
+.pt80{
+    padding-top: 80px;
+}
+.pb40{
+    padding-bottom: 40px;
+}
+.pb80{
+    padding-bottom: 80px;
+}
 .footer-btn{
     display: none;
 }
@@ -281,7 +290,10 @@ section{
 
 @media (max-width: 768px){
 body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+}
+.banner img{
+    height: 750px;
 }
 .pc_quick{
     display: none;
@@ -297,6 +309,15 @@ body{
 }
 .pt20{
     padding-top: 20px;
+}
+.pb20{
+    padding-bottom: 20px;
+}
+.pt60{
+    padding-top: 60px;
+}
+.pb60{
+    padding-bottom: 60px;
 }
 .pc{
     display: none;
