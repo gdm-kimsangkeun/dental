@@ -4,6 +4,7 @@ html,
 body {
   position: relative;
   height: 100%;
+  box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -129,8 +130,7 @@ section{
     align-items: center;
 }
 .footer_menu .footer_lnb > li > a {
-    font-family: 'Noto Sans KR';
-    font-size: 22px;
+    font-size: 18px;
     color: #fff;
 }
 .footer_menu .footer_lnb > li::after {
@@ -280,6 +280,9 @@ section{
   .quick_menu  a{color:#fff;font-weight:bold}
 
 @media (max-width: 768px){
+body{
+    overflow-x: hidden;
+}
 .pc_quick{
     display: none;
 }
@@ -291,6 +294,9 @@ section{
 }
 .pt40{
     padding-top: 40px;
+}
+.pt20{
+    padding-top: 20px;
 }
 .pc{
     display: none;
@@ -305,6 +311,12 @@ section{
 }
 .mb img{
     width: 100%;
+}
+.w108{
+    width: 108%;;
+}
+.flex_box{
+    padding: 0 15px;
 }
 .con-img{
     padding: 0 15px;
@@ -364,7 +376,7 @@ footer{
     display: flex;
     width: 2px;
     height: 21px;
-    margin:0px 23px;
+    margin:0px 10px;
     background-color: #fff;
 }
 .footer_address{
