@@ -338,7 +338,7 @@ footer{
     background: #171717;
 }
 .footer_menu {
-    padding: 0 15px;
+    
 }
 .footer_menu .footer_lnb{
     display: flex;
@@ -373,7 +373,6 @@ footer{
     line-height: 30px;
 }
 .footer_address.mb{
-    padding: 0 15px;
     font-size: 16px;
 }
 .footer_address span{
