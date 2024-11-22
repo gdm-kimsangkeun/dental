@@ -27,17 +27,38 @@
 	<meta name="twitter:description" content="39년 임상 경력 대표원장의 1:1 책임진료, 강남구치과, 언주역치과, 논현동치과, 강남구치과추천, 강남구치과잘하는곳">
 	<link rel="shortcut icon" href="/favicon.ico">
     <title>신사이사랑치과</title>
-	
+	<link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
 </head>
 <body>
 
-	<div class="logo">
+	<style>
+	#header.active{ background:rgba(253, 253, 253, 1);}
+	#header{position: fixed; top: 0; left: 0; width: 100%; z-index: 1;}
+	#header p{text-align: center; padding: 20px 0; position: relative;}
+	@media(max-width:768px){
+		#header img{width: 36%;}
+	}
+</style>
+	<header id="header">
 		<p>
 			<a href="/index.html">
-				<img src="/img/logo.png" alt="신사이사랑치과 로고">
+				<img src="/img/logo.png" alt="">
 			</a>
 		</p>
-	</div>
+	</header>
+
+	<script>
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 0) {
+        header.classList.add('active');
+    } else {
+        header.classList.remove('active');
+    }
+});
+	</script> 
 
 
 
@@ -71,7 +92,7 @@
 				box-sizing: border-box;
 			}
 			.privacy_box{
-				padding:40px 0px;
+				padding:120px 0px 40px;
 				width: 100%;
 				margin: 0;
 			}

@@ -40,6 +40,27 @@
 </head>
 <body>
 
+<style>
+	
+</style>
+	<header id="header">
+		<p>
+			<a href="/index.html">
+				<img src="/img/logo.png" alt="">
+			</a>
+		</p>
+	</header>
+
+	<script>
+		window.addEventListener('scroll', function() {
+			const header = document.getElementById('header');
+			if (window.scrollY > 0) {
+				header.classList.add('active');
+			} else {
+				header.classList.remove('active');
+			}
+		});
+			</script> 
 	<!-- popup -->
 	<div id="popup" class="popup-overlay">
         <div class="popup">
@@ -110,7 +131,8 @@
 
 <!-- pc배너 -->
     <section class="pc">
-        <img src="/img/implant_banner.jpg" alt="">
+        <!-- <img src="/img/implant_banner.jpg" alt="신사이사랑치과 배너"> -->
+		<img src="/img/logo_none_banner.jpg" alt="신사이사랑치과 배너">
     </section>
     </div>
 
@@ -258,7 +280,8 @@
 		  	<!-- mobile 이미지 -->
 			 
 			<section class="mb banner">
-				<img src="/img/m_banner.jpg" alt="신사이사랑치과 모바일 배너">
+				<!-- <img src="/img/m_banner.jpg" alt="신사이사랑치과 모바일 배너"> -->
+				<img src="/img/m_logo_none_banner.jpg" alt="신사이사랑치과 모바일 배너">
 			</section>
 			<div class="wrap">
 				<section class="mb pt60">
@@ -423,8 +446,9 @@
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	  	  <!-- Swiper JS -->
-			<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		
 			<!-- Initialize Swiper -->
 			<script>

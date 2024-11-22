@@ -12,6 +12,12 @@
 	}
 }
 
+
+/* header */
+#header{ position: fixed; top: 0; left: 0; width: 100%; z-index: 1;}
+#header p{ text-align: center; padding: 20px 0; position: relative;}
+#header.active{ background:rgba(253, 253, 253, 1);}
+
 /* footer */
 .footer_address { color: #646464; font-size: 22px; line-height: 40px;}
 .capyright { padding: 62px 0 76px 0; background: #171717; min-width: 1648px;}
@@ -112,6 +118,8 @@
     .slider_wrap{ padding: 0 15px;}
     .swiper-pagination-bullet-active{ background: #184f9a;}
 
+    /* header img */
+    #header img{ width: 36%;}
     .section2{/* display: none; */}
 
     /* footer */
@@ -135,9 +143,10 @@
 
 
     /* scrolltop */
-    #scrollToTopBtn { position: fixed; bottom: 100px; right: 20px; padding: 10px 10px; background-color: #184f9a; color: white; border: none; border-radius: 5px; cursor: pointer; display: none; /* 초기에는 버튼을 숨김 */ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); font-size: 16px; border-radius: 50px; opacity: .6;}
+    #scrollToTopBtn { position: fixed; bottom: 100px; right: 20px; padding: 8px 10px; background-color: #184f9a; color: white; border: none; border-radius: 5px; cursor: pointer; display: none; /* 초기에는 버튼을 숨김 */ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); font-size: 16px; border-radius: 50px; opacity: .6;}
     #scrollToTopBtn:hover { background-color: #0056b3;}
 
+    
 
 
 }
