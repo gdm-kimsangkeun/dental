@@ -1,0 +1,154 @@
+/* 팝업 오버레이 */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* 팝업 */
+.popup {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: popup-show 0.3s ease-in-out;
+}
+
+/* 메뉴 */
+.popup-menu {
+    width: 30%;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.popup-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.menu-item {
+    padding: 10px;
+    flex: 1 0 45%; /* 한 줄에 두 개씩 배치 */
+    text-align: center;
+    background-color: #e9ecef;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* 내용 */
+.popup-content {
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 하단 */
+.popup-footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.popup-footer label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.popup-footer input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.close-button {
+    background: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.close-button:hover {
+    background: #c9302c;
+}
+
+/* 팝업 애니메이션 */
+@keyframes popup-show {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .popup {
+        flex-direction: column;
+    }
+    
+    .popup-menu {
+        width: 100%;
+        border-right: none;
+        padding: 10px;
+    }
+    .popup-menu ul{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .menu-item {
+        flex: 1 0 45%; /* 모바일에서도 한 줄에 두 개 */
+    }
+
+    .popup-content {
+        width: 100%;
+    }
+}
