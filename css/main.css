@@ -144,7 +144,7 @@
 
 
     /* scrolltop */
-    #scrollToTopBtn { position: fixed; bottom: 100px; right: 20px; padding: 5px 10px; background-color: #184f9a; color: white; border: none; cursor: pointer; display: none; /* 초기에는 버튼을 숨김 */ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); font-size: 14px; border-radius: 50%; opacity: .6; font-weight: 700;}
+    #scrollToTopBtn { position: fixed; bottom: 100px; right: 20px; padding: 5px 10px; background-color: #184f9a; color: white; border: none; cursor: pointer; display: none; /* 초기에는 버튼을 숨김 */ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); font-size: 16px; border-radius: 50%; opacity: .6; font-weight: 700;}
     #scrollToTopBtn:hover { background-color: #0056b3;}
 
     
