@@ -61,41 +61,10 @@
 			}
 		});
 			</script> 
-	<!-- popup -->
-	<div id="popup" class="popup-overlay">
-        <div class="popup">
-           <!-- 오른쪽 이미지 영역 -->
-           <div class="popup-content">
-            <img id="popupImage" src="/pop_img/pop1.jpg" alt="팝업 이미지" class="popup-image">
-        </div>
-            <!-- 왼쪽 메뉴 -->
-            <div class="popup-menu">
-                <ul>
-                    <li class="menu-item active" data-image="/pop_img/pop1.jpg">팝업1</li>
-                    <li class="menu-item" data-image="/pop_img/pop2.jpg">팝업2</li>
-                    <li class="menu-item" data-image="/pop_img/pop3.jpg">팝업3</li>
-                    <li class="menu-item" data-image="/pop_img/pop4.jpg">팝업4</li>
-                    <li class="menu-item" data-image="/pop_img/pop5.jpg">팝업5</li>
-                    <li class="menu-item" data-image="/pop_img/pop1.jpg">팝업6</li>
-                    <li class="menu-item" data-image="/pop_img/pop2.jpg">팝업7</li>
-                    <li class="menu-item" data-image="/pop_img/pop3.jpg">팝업8</li>
-                    <!-- <li class="menu-item" data-image="/pop_img/pop4.jpg">팝업9</li> -->
-                    <!-- <li class="menu-item" data-image="/pop_img/pop5.jpg">팝업10</li> -->
-                </ul>
-            </div>
-          <!-- 최대10개 이미지 600*600 -->
-           
 
-            <!-- 하단 -->
-            <div class="popup-footer">
-                <label>
-                    <input type="checkbox" id="noShowToday">
-                    24시간 동안 다시 열리지 않습니다.
-                </label>
-                <button id="closePopup" class="close-button">닫기</button>
-            </div>
-        </div>
-    </div>
+
+
+
 	
 
 
@@ -125,14 +94,24 @@
 
 
 
-
+<style>
+	@keyframes mymove {
+ from{
+	opacity: 0;
+ }
+ to{
+	opacity: 1;
+ }
+}
+</style>
 
 <!-- pc 버전 이미지 -->
 
 <!-- pc배너 -->
-    <section class="pc">
+    <section class="pc" style="position: relative;">
         <!-- <img src="/img/implant_banner.jpg" alt="신사이사랑치과 배너"> -->
-		<img src="/img/logo_none_banner.jpg" alt="신사이사랑치과 배너">
+		<img src="/img/918.jpg" alt="신사이사랑치과 배너">
+		<img style="position: absolute; top: 0; left: 0;  animation: mymove 3s forwards;" src="/img/9181.png" alt="신사이사랑치과 배너">
     </section>
     </div>
 
@@ -275,13 +254,23 @@
 			}
 		  </style>
 
-
+<style>
+	@keyframes mymove {
+		from{
+	opacity: 0;
+ }
+ to{
+	opacity: 1;
+ }
+}
+</style>
 
 		  	<!-- mobile 이미지 -->
 			 
-			<section class="mb banner">
+			<section class="mb banner" style="position: relative;">
 				<!-- <img src="/img/m_banner.jpg" alt="신사이사랑치과 모바일 배너"> -->
-				<img src="/img/m_logo_none_banner.jpg" alt="신사이사랑치과 모바일 배너">
+				<img src="/img/918_m2.png" alt="신사이사랑치과 모바일 배너">
+				<img style="position: absolute; top: 0; left: 0; animation: mymove 3s forwards;" src="/img/918_m1.png" alt="신사이사랑치과 모바일 배너">
 			</section>
 			<div class="wrap">
 				<section class="mb pt60">
@@ -441,6 +430,7 @@
 
 	<!-- 탑버튼 -->
 	<button id="scrollToTopBtn">&uarr;</button>
+	<button id="scrollToTopBtn">ㅁ</button>
 
 
 
